@@ -1,5 +1,5 @@
 # Dorks
-This tool automates Google Dorks generation for a user-specified domain in Python and Go. It replaces "{domain}" in dorks from a file (Python) or list (Go), displays results, and saves them to "<domain>_dorks.txt". Ideal for security researchers to ethically find exposed data. Python uses threads; Go uses goroutines. (298 characters)
+This tool automates Google Dorks generation for a user-specified domain in Python and Go. It replaces "{domain}" in dorks from a file (Python) or list (Go), displays results, and saves them to "<domain>_dorks.txt". Ideal for security researchers to ethically find exposed data. Python uses threads; Go uses goroutines.
 
 # Google Dorks Automation Tool
 This tool generates Google Dorks for a user-specified domain, reading from `dorks.txt` and saving to `<domain>_dorks.txt`. Available in Python and Go.
