@@ -50,3 +50,18 @@ site:{domain} inurl:"email" filetype:mdb
 site:{domain} inurl:"backup" filetype:mdb
 site:{domain} inurl:"*db" filetype:mdb
 site:{domain} inurl:".env"
+site:{domain} filetype:java inurl:(login | config | database)
+site:{domain} filetype:jsp inurl:(admin | user | auth)
+site:{domain} inurl:*.jsp id
+site:{domain} intitle:"index of" *.java
+site:{domain} filetype:jsp -inurl:(signup | login)
+site:{domain} filetype:aspx inurl:(login | admin | portal)
+site:{domain} inurl:*.aspx id=
+site:{domain} intitle:"index of" *.aspx
+site:{domain} inurl:(default.aspx | home.aspx)
+site:{domain} filetype:aspx intext:"error" | "exception"
+site:{domain} filetype:php inurl:(login | admin | config)
+site:{domain} inurl:*.php id=
+site:{domain} intitle:"index of" *.php
+site:{domain} inurl:(index.php | config.php) -inurl:(signup | login)
+site:{domain} filetype:php intext:"mysql_connect" | "db_password"
